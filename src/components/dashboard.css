@@ -1,0 +1,67 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Different background colors for each card */
+  .card.card-view-all {
+    background-color: #AED6F1; /* Light Blue */
+  }
+  
+  .card.card-view-by-id {
+    background-color: #ABEBC6; /* Light Green */
+  }
+  
+  .card.card-register-form {
+    background-color: #FAD02E; /* Yellow */
+  }
+  
+  .card.card-update-form {
+    background-color: #F1948A; /* Light Salmon */
+  }
+  
