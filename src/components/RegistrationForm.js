@@ -116,12 +116,12 @@ const RegistrationForm = () => {
       // Stringify the selectedSubjects array
       data.selectedSubjects = JSON.stringify(data.selectedSubjects);
 
-      console.log("Sending data to server:", data);
+      // console.log("Sending data to server:", data);
       const response = await axios.post(
-        "http://localhost:4000/api/registerform",
+        `${process.env.REACT_APP_SERVER_BASE_URL}/api/registerform`,
         data
       );
-      console.log("Server response:", response);
+      // console.log("Server response:", response);
       return response.data;
     } catch (error) {
       console.error("Error submitting form:", error);

@@ -48,20 +48,20 @@
     color: #666;
   }
   
-  /* Different background colors for each card */
+
   .card.card-view-all {
-    background-color: #AED6F1; /* Light Blue */
+    background-color: #AED6F1; 
   }
   
   .card.card-view-by-id {
-    background-color: #ABEBC6; /* Light Green */
+    background-color: #ABEBC6;
   }
   
   .card.card-register-form {
-    background-color: #FAD02E; /* Yellow */
+    background-color: #FAD02E;
   }
   
   .card.card-update-form {
-    background-color: #F1948A; /* Light Salmon */
+    background-color: #F1948A;
   }
   

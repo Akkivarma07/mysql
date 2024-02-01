@@ -33,7 +33,8 @@ const UpdateRegistrationForm = () => {
     const fetchFormDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:4000/api/getform/${id}`
+          `${process.env.REACT_APP_SERVER_BASE_URL}/api/getform/${id}`
+          
         );
         const formDetails = response.data.form;
         console.log(formDetails);

@@ -10,7 +10,9 @@ const ViewAllForms = () => {
   useEffect(() => {
     const fetchForms = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/api/viewforms');
+        // const response = await axios.get('https://exam-form-backend.onrender.com/api/viewforms')
+        const response = await axios.get(`${process.env.REACT_APP_SERVER_BASE_URL}/api/viewforms`);
+;
         setForms(response.data.forms);
         setError(null);
       } catch (error) {

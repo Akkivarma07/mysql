@@ -14,7 +14,9 @@ const ViewFormDetails = () => {
   useEffect(() => {
     const fetchFormDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/api/getform/${id}`);
+        const response = await axios.get(`${process.env.REACT_APP_SERVER_BASE_URL}/api/getform/${id}`);
+        // const response = await axios.get(`${process.env.REACT_APP_SERVER_BASE_URL}/api/viewforms`);
+
         setFormData({
             ...response.data.form,
             selectedSubjects: JSON.parse(response.data.form.selectedSubjects),
