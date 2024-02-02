@@ -223,7 +223,7 @@ const DeleteByIdForm = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.delete(`${process.env.REACT_APP_SERVER_BASE_URL}/api/deleteform/${id}`);
+      const response = await axios.delete(`${process.env.REACT_APP_SERVER_BASE_URL}api/deleteform/${id}`);
 
       if (response.data.success) {
         setError(null);
