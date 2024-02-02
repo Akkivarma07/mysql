@@ -118,7 +118,7 @@ const RegistrationForm = () => {
 
       // console.log("Sending data to server:", data);
       const response = await axios.post(
-        `${process.env.REACT_APP_SERVER_BASE_URL}/api/registerform`,
+        `${process.env.REACT_APP_SERVER_BASE_URL}api/registerform`,
         data
       );
       // console.log("Server response:", response);
